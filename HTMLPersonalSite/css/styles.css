@@ -115,6 +115,10 @@ h3 {
   margin-top: 5px;
 }
 
+.h3Align {
+  padding-left: 25px;
+}
+
 #text {
   color: #750375;
 }
@@ -158,12 +162,12 @@ td {
 
 .tableSpacing {
   width: 50%;
-  margin-left: 350px;
+  margin-left: 250px;
   position: static;
 }
 
 .skills {
-  margin-left: 465px;
+  margin-left: 365px;
   position: static;
 }
 
@@ -185,7 +189,7 @@ table {
 }
 
 .skills-align {
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 .contactAlign {
