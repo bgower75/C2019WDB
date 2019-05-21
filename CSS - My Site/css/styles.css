@@ -1,3 +1,24 @@
+.top {
+  background-color: teal;
+}
+
 body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.middle, .bottom {
+  height: 200px;
+  width: 200px;
+}
+
+.middle {
+  background-color: red;
+}
+
+.bottom {
   background-color: blue;
 }
