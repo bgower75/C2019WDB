@@ -1,5 +1,6 @@
 .top {
   background-color: teal;
+  text-align: center;
 }
 
 body {
@@ -21,4 +22,8 @@ h1 {
 
 .bottom {
   background-color: blue;
+}
+
+.bottomCloud {
+  position: absolute;
 }
