@@ -32,6 +32,10 @@ hr {
   text-align: center;
 }
 
+div.icons p {
+  font-size: 20px;
+}
+
 div.profile {
   transform: translateY(20px);
 }

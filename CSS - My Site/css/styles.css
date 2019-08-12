@@ -1,6 +1,8 @@
 .top {
   background-color: teal;
   text-align: center;
+  position: relative;
+  padding-top: 150px;
 }
 
 body {
@@ -12,18 +14,29 @@ h1 {
 }
 
 .middle, .bottom {
-  height: 200px;
-  width: 200px;
+ text-align: center;
 }
 
 .middle {
-  background-color: red;
+ 
 }
 
 .bottom {
-  background-color: blue;
+ 
 }
 
 .bottomCloud {
   position: absolute;
+  bottom: 300px;
+  left: 300px;
+}
+
+.topCloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+div img {
+ 
 }
