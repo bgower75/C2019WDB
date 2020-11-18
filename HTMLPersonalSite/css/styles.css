@@ -1,10 +1,55 @@
-hr {
+.separator {
   width: 98%;
   border-style: dotted none none;
   border-color: #750375;
   border-width: 5px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-weight: bolder;
+}
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: .2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: .2;
+  }
+}
+
+.separator {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
 }
 
 .linkedin {
@@ -69,6 +114,11 @@ div.profile {
   background-position: left, center, right;
 }
 
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 div.hobbies {
   background-image: url("../images/reading.jpg"), url("../images/Running.jpeg"),
     url("../images/music.jpeg");
@@ -131,7 +181,7 @@ h3 {
 
 body {
   height: 100%;
-  background-color: #F4E6FC;
+  /* background-color: #F4E6FC; */
 }
 
 .position {
